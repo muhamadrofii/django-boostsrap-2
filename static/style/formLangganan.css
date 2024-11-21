@@ -1,0 +1,119 @@
+:root {
+    --firstpurple: #704FE3;
+    --secondpurple: #DEC8FE;
+    --firstyellow:#FFD25D;
+    --secondyellow: #FFF1CE;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    width: 100%;
+}
+
+.checkout-container {
+
+    width: 80%;
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.customer-info, .order-summary {
+    padding: 20px;
+    width: 50%;
+}
+
+.customer-info {
+    border-right: 1px solid #e0e0e0;
+}
+
+.customer-info h2 {
+    color: var(--firstpurple);
+    margin-bottom: 10px;
+}
+
+.customer-info h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+}
+
+.payment-method {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.payment-method button {
+    padding: 10px 20px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    flex: 1;
+}
+
+.payment-method button.active {
+    background-color: var(--firstpurple);
+    color: white;
+    border: none;
+}
+
+.pay-button {
+    width: 100%;
+    padding: 15px;
+    background-color:var(--firstpurple);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.order-summary {
+    text-align: center;
+}
+
+.order-summary h1 {
+    color:var(--firstpurple);
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.order-summary p {
+    margin: 5px 0;
+}
+
+hr {
+    margin: 20px 0;
+}

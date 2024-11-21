@@ -1,0 +1,197 @@
+:root {
+    --firstpurple: #704FE3;
+    --secondpurple: #DEC8FE;
+    --firstyellow: #FFD25D;
+    --secondyellow: #FFF1CE;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.custom-navbar {
+    background-color: var(--firstpurple); /* Tetap sama */
+    padding: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan agar terlihat mengambang */
+    border-bottom: 3px solid var(--darkpurple); /* Tambahkan garis bawah */
+}
+
+.navbar-brand img {
+    max-height: 50px;
+    margin-right: 10px; /* Memberi jarak dengan teks */
+}
+
+.navbar-brand {
+    color: var(--white); /* Warna teks logo */
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 1rem; /* Tambahkan padding untuk jarak */
+    border-radius: 5px; /* Membuat ujung tombol sedikit bulat */
+    transition: background-color 0.3s, color 0.3s; /* Efek transisi hover */
+}
+
+.nav-link.active {
+    background-color: var(--firstyellow); /* Background kuning untuk aktif */
+    color: var(--firstpurple); /* Warna teks ungu saat aktif */
+    font-weight: bold;
+    text-decoration: none; /* Hindari garis bawah */
+}
+
+.nav-link:hover {
+    background-color: var(--darkpurple); /* Background ungu gelap saat hover */
+    color: var(--firstyellow); /* Warna teks kuning saat hover */
+}
+
+/* Navbar Toggler */
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .nav-link {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Video Category Section */
+.video-category {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: white;
+}
+
+.video-category h2 {
+    color: var(--firstpurple);
+    margin-bottom: 1.5rem;
+}
+
+.video-category button {
+    background-color: var(--firstpurple);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.video-category button:hover {
+    background-color: var(--secondpurple);
+}
+
+/* Video Section */
+.video-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem 1rem;
+}
+
+.video-card {
+    background-color: var(--secondyellow);
+    border: 1px solid var(--firstpurple);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    width: calc(33.333% - 2rem);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+
+.video-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.video-card h5 {
+    margin-top: 0.5rem;
+    color: var(--firstpurple);
+}
+
+.video-card .play-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--firstpurple);
+    color: white;
+    padding: 2rem;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.footer-column h3 {
+    color: var(--secondyellow);
+    margin-bottom: 1rem;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-column p {
+    margin: 0.5rem 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: var(--secondyellow);
+}
+
+.category{
+    background-color: var(--firstpurple);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
