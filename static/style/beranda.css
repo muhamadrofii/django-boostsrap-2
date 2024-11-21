@@ -137,6 +137,25 @@ body {
     color: #ffffff;
 }
 
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+#exploreNowButton {
+    background-color: #704FE3; /* Ungu terang */
+    color: #FFFFFF; /* Putih */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#exploreNowButton:hover {
+    background-color: #FFD25D; /* Kuning cerah */
+    color: #704FE3; /* Ungu */
+    transform: scale(1.05); /* Efek zoom sedikit */
+}
+
+
 .card {
     border-radius: 15px;
     overflow: hidden;
@@ -144,7 +163,9 @@ body {
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease-in-out;
 }
 
 .card-img-top {
@@ -175,23 +196,11 @@ body {
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none; /* Firefox */
 }
+
 .games-grid::-webkit-scrollbar {
-    display: none; /* WebKit */
+    display: none; 
 }
-.game-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    width: 300px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    overflow: hidden;
-    position: relative;
-    flex: 0 0 auto;
-}
-.game-card img {
-    width: 100%;
-    height: auto;
-}
+
 .game-card .game-info {
     padding: 10px;
 }
@@ -231,6 +240,53 @@ body {
 .game-card.featured .game-info .game-type {
     font-size: 16px;
 }
+
+.game-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.game-card img {
+    width: 100%;
+    height: 300px;
+    width: 300px;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Tombol Play */
+.game-card .play-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--firstpurple);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+.game-card:hover .play-button {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-5px); /* Efek kecil saat muncul */
+}
+
+
 
 .footer {
     background-color: #464646;

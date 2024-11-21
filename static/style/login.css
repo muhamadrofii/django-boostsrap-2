@@ -1,3 +1,4 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap'); */
 
 :root {
     --firstpurple: #704FE3;
@@ -8,22 +9,15 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    /* background: var(--secondyellow); */
 }
-
-/*------------ Login container ------------*/
 
 .box-area{
     width: 930px;
 }
 
-/*------------ Right box ------------*/
-
 .right-box{
     padding: 40px 30px 40px 40px;
 }
-
-/*------------ Custom Placeholder ------------*/
 
 ::placeholder{
     font-size: 16px;
@@ -40,36 +34,39 @@ body{
     color: #704FE3;
 }
 .color-none:focus {
-    color: inherit; /* Mengembalikan warna teks dan ikon default */
-    background-color: inherit; /* Mengembalikan warna latar default */
-    /* border: inherit; */
+    color: inherit;
+    background-color: inherit;
 }
-
-
 
 .btn-login {
     background-color: var(--firstpurple);
+    border: 1px solid var(--firstpurple);
+}
+
+.btn-login a {
+    color: #ffffff;
 }
 
 .btn-login:hover {
-    background-color: var(--secondpurple);
+    background-color: #ffffff;
+    color: var(--firstyellow);
+    border: 1px solid var(--firstyellow);
+}
+
+.btn-login a:hover {
+    color: var(--firstyellow);
 }
 
 
-/*------------ For small screens------------*/
-
 @media only screen and (max-width: 768px){
-
-     .box-area{
+    .box-area{
         margin: 0 10px;
-
-     }
-     .left-box{
+    }
+    .left-box{
         height: 100px;
         overflow: hidden;
-     }
-     .right-box{
+    }
+    .right-box{
         padding: 20px;
-     }
-
+    }
 }

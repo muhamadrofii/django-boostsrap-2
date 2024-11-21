@@ -1,161 +1,161 @@
 :root {
-    --firstpurple: #704FE3;
-    --secondpurple: #DEC8FE;
-    --firstyellow:#FFD25D;
-    --secondyellow: #FFF1CE;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--bg);
-    color: #ffffff;
-    width: 100%;
-  }
-  
-  .navbar {
-    background-color: #ffffff;
-    height: 70px;
-    margin-bottom: 100px;
-  }
-  
-  .navbar img {
-    height: 40px;
-  }
-  
-  .navbar .btn {
-    font-weight: bold;
-    color: red;
-  }
-  
-  .navbar .btn:hover {
-    color: #ffffff;
-  }
-  
-  .navbar .nav-link {
-    font-weight: 500;
-    border: 1px solid transparent;
-    border-radius: 20px;
-    padding: 5px 10px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .navbar .nav-link:hover {
-    background-color: #EDE2FF;
-    color: var(--firstpurple);
-    border: 1px solid var(--firstpurple);
-    text-decoration: none;
-  }
-  
-  .navbar .nav-link.active {
-    color: var(--firstpurple);
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000;
-    color: #fff;
-    padding: 10px 20px;
-    margin-top: 100px;
-  }
-  
-  .header .title h1 {
-    margin: 10px;
-    font-size: 20px;
-  }
-  
-  .header .user-info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .header .logout-btn {
-    background-color: #fff;
-    color: #000;
-    border: none;
-    padding: 5px 10px;
-    margin-left: 10px;
-    cursor: pointer;
-  }
-  
-  header .logout-btn:hover {
-    background-color: #ddd;
-  }
-  
-  main {
-    margin-top: 20px;
-  }
-  
-  h2 {
-    color: #333;
-  }
-  
-  .profile-form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .profile-pic {
-    flex: 1 1 100px;
-    text-align: center;
-  }
-  
-  .profile-pic img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #ddd;
-    margin-bottom: 10px;
-  }
-  
-  .profile-pic input {
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .form-group {
-    flex: 1 1 300px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    color: #555;
-  }
-  
-  input,
-  select,
-  button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-  }
-  
-  button.submit-btn {
-    background-color: #000;
-    color: #fff;
-    cursor: pointer;
-    border: none;
-  }
-  
-  button.submit-btn:hover {
-    background-color: #333;
-  }
+  --firstpurple: #704FE3;
+  --secondpurple: #DEC8FE;
+  --firstyellow:#FFD25D;
+  --secondyellow: #FFF1CE;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: #ffffff;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #ffffff;
+  height: 70px;
+  margin-bottom: 100px;
+}
+
+.navbar img {
+  height: 40px;
+}
+
+.navbar .btn {
+  font-weight: bold;
+  color: red;
+}
+
+.navbar .btn:hover {
+  color: #ffffff;
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .nav-link:hover {
+  background-color: #EDE2FF;
+  color: var(--firstpurple);
+  border: 1px solid var(--firstpurple);
+  text-decoration: none;
+}
+
+.navbar .nav-link.active {
+  color: var(--firstpurple);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 100px;
+}
+
+.header .title h1 {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.header .user-info {
+  display: flex;
+  align-items: center;
+}
+
+.header .logout-btn {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+header .logout-btn:hover {
+  background-color: #ddd;
+}
+
+main {
+  margin-top: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+.profile-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.profile-pic {
+  flex: 1 1 100px;
+  text-align: center;
+}
+
+.profile-pic img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ddd;
+  margin-bottom: 10px;
+}
+
+.profile-pic input {
+  display: block;
+  margin: 0 auto;
+}
+
+.form-group {
+  flex: 1 1 300px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+button.submit-btn {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+button.submit-btn:hover {
+  background-color: #333;
+}
