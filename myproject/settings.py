@@ -137,3 +137,23 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# settings.py
+# AUTH_USER_MODEL = 'accountsapp.CustomUser'
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'  # Bisa 'username', 'email', atau 'username_email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_USERNAME_REQUIRED = True  # Set ke False jika hanya menggunakan email
+
+# CCOUNT_AUTHENTICATION_METHOD = 'email' 
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_USERNAME_REQUIRED = False
+ACCOUNT_FORMS = {
+    'signup': 'accountsapp.forms.CustomSignupForm',  # Ganti `myapp` dengan nama aplikasi Anda
+    'login': 'accountsapp.forms.CustomLoginForm',
+}
+
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',  # Wajib ada
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
+
+LOGIN_REDIRECT_URL = '/landingpage'  # Halaman setelah login

@@ -9,3 +9,9 @@ def register(request):
 
 def profil(request):
     return render(request, 'profil.html')
+
+def beranda(request):
+    return render(request, 'beranda.html')
+
+def landingPage(request):
+    return render(request, 'landingPage.html')

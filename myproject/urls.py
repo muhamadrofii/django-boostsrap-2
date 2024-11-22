@@ -35,6 +35,8 @@ urlpatterns = [
     path('login/', accountsapp_views.login, name='login'),
     path('register/', accountsapp_views.register, name='register'),
     path('langganan/', subscriptionsapp_views.langganan, name='langganan'),
-    path('profile/', accountsapp_views.profil, name='profil')
+    path('profile/', accountsapp_views.profil, name='profil'),
+    path('beranda/', accountsapp_views.beranda, name='beranda'),
+    path('landingpage/', accountsapp_views.landingPage, name='landingPage'),
 
 ]

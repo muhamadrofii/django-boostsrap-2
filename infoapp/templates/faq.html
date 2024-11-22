@@ -103,15 +103,25 @@
             <h1 style="color: #704FE3;">Kontak<span style="color: #FFD25D;"> Kami</span>.</h1>
             <div class="kontak-card">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126748.60965110475!2d107.56075414260435!3d-6.903271950023029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x146a1f93d3e815b2!2sBandung%2C%20Kota%20Bandung%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1719561447847!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-                <form action="">
+                <form action="{% url 'faq' %}" method="post">
+                    {% if messages %}
+                    <div id="floating-message" class="messages">
+                        {% for message in messages %}
+                            <div class="alert alert-success">
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                    {% csrf_token %}
                     <div class="input-group">
-                        <input type="text" placeholder="Nama">
+                        <input type="text" name="nama" placeholder="Nama">
                     </div>
                     <div class="input-group">
-                        <input type="text" placeholder="Email">
+                        <input type="text" name="email" placeholder="Email">
                     </div>
                     <div class="input-group">
-                        <input type="text" placeholder="Feedback">
+                        <input type="text" name="feedback" placeholder="Feedback">
                     </div>
                     <button class="btn" type="submit">Kirim Pesan</button>
                 </form>
@@ -171,5 +181,7 @@
             </div>
             </div>
         </footer>
-
-        {% endblock %}
+        <script>feather.replace();</script>
+        <script src="{% static '/script/navbar.js' %}"></script>
+        <script src="{% static '/script/faq.js' %}"></script>
+{% endblock %}
