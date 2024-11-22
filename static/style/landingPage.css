@@ -635,3 +635,8 @@ body {
 .footer .credit-right {
     text-align: right;
 }
+
+.modal-content {
+    background-color: #ffffff; /* Warna putih untuk latar modal */
+    color: #000000;           /* Warna hitam untuk teks */
+  }
